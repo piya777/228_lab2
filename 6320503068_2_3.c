@@ -2,9 +2,9 @@
     void main()
     {
         int num[3],i,token,j,tokens[3];
-        char eng[4];
+        char eng[3];
         scanf("%d %d %d",&num[0],&num[1],&num[2]);
-        scanf("%s",&eng);
+        scanf("%s",eng);
         for( i=0 ; i<2 ; i++ )
         {
             for( j=1 ; j<3 ; j++ )

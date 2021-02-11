@@ -41,7 +41,7 @@
                 }
                 if(name>='A' && name<='I')
                 {
-                    printf("{@_@}");
+                    printf("(^_^)");
                 }
                 else if(name>='J' && name<='R')
                 {
