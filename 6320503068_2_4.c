@@ -8,7 +8,7 @@
         scanf("%d",&day);
         if(day%2!=0)
         {
-            if(day%5==0)
+            if(day%10==5)
             {
                 printf("%c",92);
             }
@@ -24,30 +24,30 @@
             {
                 printf("(T_T)");
             }
-            if(day%5==0)
+            if(day%10==5)
             {
                 printf("/");
             }
         }
         else if(day%2==0)
         {
-            if(day%5==0)
+            if(day%10==5)
             {
                 printf("%c",92);
             }
             if(name>='A' && name<='I')
             {
-                printf("(@_@)");
+                printf("{@_@}");
             }
             else if(name>='J' && name<='R')
             {
-                printf("(*v*)");
+                printf("{*v*}");
             }
             else if(name>='S' && name<='Z')
             {
-                printf("(x_x)");
+                printf("{x_x}");
             }
-            if(day%5==0)
+            if(day%10==5)
             {
                 printf("/");
             }
