@@ -4,6 +4,10 @@
     {
         int day,month,l,result;
         scanf("%d %d",&day ,&month);
+        if(day>7)
+        {
+            day=day%7;
+        }
         switch(month)
         {
             case 1: l=31;break;
@@ -19,12 +23,14 @@
             case 11: l=30;break;
             case 12: l=31;break;
         }
-       result=day+l;
-       if(result>l)
-       {
-           result -= l;
-       }
-       printf("%d",result+2);
+        if((l+day)%7==0)
+        {
+            printf("%d",7);
+        }
+        else
+        {
+            printf("%d",(l+day)%7);;
+        }
 
     }
 
