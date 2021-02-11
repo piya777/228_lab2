@@ -22,24 +22,24 @@
                     b=token;
                 }
             }
-            scanf("%s%s%s",&e[0],&e[1],&e[2]);
-            if(e[0]='A'&&e[1]='C'&&e[2]='B')
+            gets(e);
+            if(e[4]="ACB")
             {
                 printf("%d %d %d",&a ,&c ,&b);
             }
-            else if(e[0]="B"&&e[1]="A"&&e[2]="C")
+            else if(e[4]="BAC")
             {
                 printf("%d %d %d",&b ,&a ,&c);
             }
-            else if(e[0]="B"&&e[1]="C"&&e[2]="A")
+            else if(e[4]="BAC")
             {
                 printf("%d %d %d",&b ,&c ,&a);
             }
-            else if(e[0]="C"&&e[1]="A"&&e[2]="B")
+            else if(e[4]="BAC")
             {
                 printf("%d %d %d",&c ,&a ,&b);
             }
-            else if(e[0]="C"&&e[1]="B"&&e[2]="A")
+            else if(e[4]="BAC")
             {
                 printf("%d %d %d",&c ,&b ,&a);
             }
