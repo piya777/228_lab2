@@ -1,12 +1,10 @@
 #include<stdio.h>
-
     void main()
     {
-        int num[3],i,token,j;
-        char eng[3];
+        int num[3],i,token,j,tokens[3];
+        char eng[4];
         scanf("%d %d %d",&num[0],&num[1],&num[2]);
-        fflush(stdin);
-        scanf("%c %c %c",&eng[0],&eng[1],&eng[2]);
+        scanf("%s",&eng);
         for( i=0 ; i<2 ; i++ )
         {
             for( j=1 ; j<3 ; j++ )
@@ -23,20 +21,17 @@
         {
             if(eng[i]=='A')
             {
-                printf("%d",num[0]);
+                tokens[i]=num[0];
             }
             else if(eng[i]=='B')
             {
-                printf("%d",num[1]);
+                tokens[i]=num[1];
             }
             else if(eng[i]=='C')
             {
-                printf("%d",num[2]);
-            }
-            if(i<2)
-            {
-                printf(" ");
+                tokens[i]=num[2];
             }
         }
+        printf("%d %d %d",tokens[0],tokens[1],tokens[2]);
 
     }
