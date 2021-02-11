@@ -6,7 +6,7 @@
         int day;
         scanf("%c",&name);
         scanf("%d",&day);
-        if(day>0 && day<=31)
+        if(day>0 && day<=31 && name>='A' && name<='Z')
         {
             if(day%2!=0)
             {
