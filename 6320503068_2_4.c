@@ -5,10 +5,12 @@
         char name;
         int day;
         scanf("%c",&name);
-        scanf("%d",&day);
-        if(day>0 && day<=31 && name>='A' && name<='Z')
+        if(name>='A' && name<='Z')
         {
-            if(day%2!=0)
+            scanf("%d",&day);
+            if(day>0 && day<=31)
+            {
+                if(day%2!=0)
             {
                 if(day%10==5)
                 {
@@ -54,6 +56,8 @@
                     printf("/");
                 }
             }
+            }
+
         }
 
     }
