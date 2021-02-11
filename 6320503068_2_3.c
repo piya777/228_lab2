@@ -2,46 +2,17 @@
 
     void main()
     {
-        int a,b,c,token,i;
-        char e[4] ,tmp;
-        scanf("%d %d %d",&a,&b,&c);
-        if( (a>0 && a<=100)&&(b>0 && b<=100)&&(b>0 && b<=100) )
+        int num[3],i;
+        for( i=0 ; i<3 ; i++ )
         {
-            for(i=0;i<6;i++)
+            scanf("%d",&num[i]);
+        }
+        for( i=0 ; i<6 ; i++ )
+        {
+            if(num[i]>num[i+1])
             {
-                if(a>b)
-                {
-                    token=b;
-                    b=a;
-                    a=token;
-                }
-                else if(b>c)
-                {
-                    token=c;
-                    c=b;
-                    b=token;
-                }
-            }
-            gets(e);
-            if(e[4]="ACB")
-            {
-                printf("%d %d %d",&a ,&c ,&b);
-            }
-            else if(e[4]="BAC")
-            {
-                printf("%d %d %d",&b ,&a ,&c);
-            }
-            else if(e[4]="BAC")
-            {
-                printf("%d %d %d",&b ,&c ,&a);
-            }
-            else if(e[4]="BAC")
-            {
-                printf("%d %d %d",&c ,&a ,&b);
-            }
-            else if(e[4]="BAC")
-            {
-                printf("%d %d %d",&c ,&b ,&a);
+               token=num[i+1];
+               num[i+1]=numi[];
             }
         }
     }
